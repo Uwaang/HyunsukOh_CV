@@ -1,0 +1,74 @@
+\documentclass{muratcan_cv}
+
+\setname{Hyunsuk}{Oh}
+\setaddress{Incheon/Korea}
+\setmobile{xx xxx xx xx}
+\setmail{asfd0002@gmail.com}
+\setposition{Work Student} %ignored for now
+\setlinkedinaccount{https://www.linkedin.com/in/현석-오-aba5a7223/} %you can play with color of the template (red is also nice..)
+\setgithubaccount{https://github.com/Uwaang} %you can play with color of the template (red is also nice..)
+\setthemecolor{Blue} %you can play with color of the template (red is also nice..)
+
+\begin{document}
+%Set variables
+%You can add sections, texts, explanations just by copying the style below. Replace the dummy texts "\lipsum[1][x-x]\par" with actual texts.
+%Create header
+\headerview
+\vspace{1ex}
+%Sections
+%
+% Summary
+\addblocktext{Summary}{
+{I am Hyunsuk Oh}
+}
+%
+%Education
+\section{Education} 
+    \datedexperience{Sunmoon University}{2017-2023} 
+    \explanation{B.S in Electronic Engineering} 
+     \explanationdetail{\coloredbullet\ % 
+     Microdegree : Embedded Course \par
+     }
+%
+% Experience
+\section{Experience}
+    %
+    \datedexperience{Thinkware Inc.}{02.2023 - Present / Korea} 
+    \explanation{SW Developer / AI Dev Dept.} 
+    %
+    \datedexperience{Thinkware Inc.}{11.2022 - 02.2023 / Korea} 
+    \explanation{Intern as Developer / AI Dev Dept.} 
+    %
+%
+% Skills
+\section{Skills}
+    %
+    \newcommand{\skillone}{\createskill{Programming Languages}{\textbf \ \  C/C++, Python}}
+    %
+    \createskills{\skillone}
+%
+% Experience
+\section{Project}
+    \newcommand{\extraone}{%
+    Traffic Light Change Alarm
+    }
+    %
+    \newcommand{\extratwo}{%
+    License Plate Deep Resolution
+    }
+    %
+    \newcommand{\extrathree}{%
+    Autonomous RC Car
+    }
+    %
+    \newcommand{\extrafour}{%
+    Lane Tracer
+    }
+    %
+    \newcommand{\listofextras}{\extraone, \extratwo, \extrathree, \extrafour}
+    %
+    \createbullets{\listofextras}
+%
+%Footnote
+\createfootnote
+\end{document}
