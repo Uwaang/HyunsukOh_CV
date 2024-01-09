@@ -1,6 +1,9 @@
 # HyunsukOh_CV
 ![cv](cv.png)
 
+# Notes
+* Should you require my phone number, please contact me through the email in CV.
+
 ## Usage
 ```
 git clone https://github.com/Uwaang/HyunsukOh_CV.git
