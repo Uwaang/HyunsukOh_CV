@@ -1,5 +1,5 @@
 # docker build -t uwaang/cv_image:1.0 --build-arg UID=$UID --build-arg USER_NAME=$USER -f Dockerfile .
-# docker run -it --name cv_cont01 -v $PWD:/home/$USER/cv -w /home/$USER/cv uwaang/cv_image:1.0
+# docker run -it --rm --name cv_cont -v $PWD:/home/$USER/cv -w /home/$USER/cv -e DISPLAY=$DISPLAY -v /tmp/.X11-unix:/tmp/.X11-unix uwaang/cv_image:1.1
 
 FROM ubuntu:latest
 LABEL maintainer "https://github.com/Uwaang"
@@ -34,6 +34,7 @@ RUN apt-get update && apt-get install -y --no-install-recommends \
     wget \
     openssh-server \
     texlive-full \
+    texworks \
     poppler-utils && \
     apt-get clean && \
     rm -rf /var/lib/apt/lists/*
